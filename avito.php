@@ -40,7 +40,7 @@ foreach ($ValuesArr["values"] as $vKey => $vVal){
                 }
         }
 }
-if ($ValidateArr  != $SArr){
+if ($ValidateArr  == $SArr){
 	$ArrTextError = array("error" => array("message"=> "Входные файлы некорректны"));
 	$JsonTextError = json_encode($ArrTextError,JSON_UNESCAPED_UNICODE);
 	file_put_contents("error.json",$JsonTextError);
